@@ -17,7 +17,7 @@ body{
 	position: relative;
 }
 
-
+/*//version2*/
 .gamePiece {
 	margin-right: auto;
 	margin-left: auto;
@@ -38,7 +38,7 @@ body{
 }
 
 .cont {
-	width: 25vw;
+	width: 16vw;
 	position: absolute;
 	bottom: 0px;
 }
