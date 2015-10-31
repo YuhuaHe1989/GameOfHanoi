@@ -12,7 +12,6 @@ function init(){
 function startGame(){
 	var number = $('#numberOfDisk').val();
 	createDisk(parseInt(number));
-	
 }
 
 function createDisk(number){
@@ -30,7 +29,7 @@ var weight2 = "";
 function towerSelect(event){
 	var first = $(this).children().find(">:first-child");
 	weight1 = parseInt(first.text());
-	console.log('weight1',weight1);
+
 	var isSelected = first.hasClass('selected');
 
 	if(isSelected){
@@ -56,14 +55,25 @@ function moveDisk(){
 
 }
 
-// function win(){
-// 	var win = '';
-// 	var third = $('#cont3').children('.gamePiece');
-// 	third.each(function(){
-// 		win += third.text();
-// 	});
-// 	console.log(win);
-// }
+function win(){
+	var win = '';
+	var third = $('#cont3').children('.gamePiece');
+
+	third.each(function(){
+		win = third.text();
+	});
+
+	var number = parseInt($('#numberOfDisk').val());
+	var check = '';
+	for(var i = 1;i < number + 1;i++){
+		check += i;
+	}
+
+	if (check === win){
+		$('#win').text('WIN');
+		console.log('WIN');
+	}
+}
 
 
 
