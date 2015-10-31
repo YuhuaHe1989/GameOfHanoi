@@ -1,0 +1,54 @@
+body{
+	background-color: grey;
+}
+
+.container {
+	margin-top: 30px;
+	text-align: center;
+}
+
+#tower1,#tower2,#tower3 {
+	margin: 0px;
+	background-color: white;
+	border: 1px solid black;
+	width: 200px;
+	height: 400px;
+	display: inline-block;
+	position: relative;
+}
+
+
+.gamePiece {
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid black;
+	width: 100px;
+	height: 20px;
+	background-color: purple;
+}
+
+.Game {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.selected.gamePiece {
+	border-color: red;
+	border-width: 3px;
+}
+
+.cont {
+	width: 25vw;
+	position: absolute;
+	bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
