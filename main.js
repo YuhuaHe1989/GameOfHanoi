@@ -10,6 +10,9 @@ function init(){
 }
 
 function startGame(){
+	$('#cont1').children().remove();
+	$('#cont2').children().remove();
+	$('#cont3').children().remove();
 	var number = $('#numberOfDisk').val();
 	createDisk(parseInt(number));
 }
